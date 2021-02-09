@@ -1,0 +1,570 @@
+@media (min-width: 1024px) and (max-width: 2560px) {
+  .facilities {
+    margin: 5rem auto 8rem;
+    width: 55vw;
+  }
+  .know-more {
+    height: 595px;
+  }
+  .know-more-left {
+    width: 361px;
+    margin: 50px auto 230px;
+  }
+  .our-partners-image {
+    justify-content: flex-end;
+  }
+  .how {
+    height: 442px;
+    overflow: visible;
+  }
+  .top-body {
+    bottom: 100px;
+    left: 400px;
+  }
+  .start-journey {
+    width: 55vw;
+  }
+}
+@media (min-width: 797px) and (max-width: 1024px) {
+  .facilities {
+    margin: 1rem auto 1rem;
+    width: auto;
+  }
+  .top-body {
+    bottom: 100px;
+    left: 100px;
+  }
+  .start-journey {
+    width: 84vw;
+  }
+}
+@media (min-width: 420px) and (max-width: 797px) {
+  .know-more {
+    height: fit-content;
+  }
+  .know-more-left {
+    width: auto;
+    margin: 0px;
+  }
+  .our-partners-image {
+    justify-content: center;
+  }
+  .how {
+    height: fit-content;
+    overflow: hidden;
+  }
+  .top-body {
+    bottom: 100px;
+    left: 50px;
+  }
+  .start-journey {
+    margin: 10px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .top-body {
+    bottom: 100px;
+    left: 10px;
+  }
+  .start-journey {
+    margin: 10px;
+    width: fit-content;
+  }
+}
+// $fonth3: 3.13em;
+// $fonth4: 1.88em;
+
+// .carousel-control-prev-icon {
+//   background-color: #00038A;
+//     border: 1px solid #f5f0e7;
+//     border-radius: 50%;
+//     color: black;
+//     padding: 20px;
+//     margin: 10px;
+//     width: 36px;
+//     height: 53px;
+//     color: invert;
+
+// }
+// .carousel-control-next  -icon {
+//   background-color: #00038A;
+//     border: 1px solid #f5f0e7;
+//     border-radius: 50%;
+//     color: black;
+//     padding: 20px;
+//     margin: 10px;
+//     width: 36px;
+//     height: 53px;
+//     color: invert;
+// }
+// top div/////////////////////////////////////////////////////////////////////////////////////////////////
+
+* {
+  font-family: Okra, Helvetica, sans-serif !important ;
+  outline: none;
+  font-weight: 100;
+  color: black;
+}
+.top {
+  background-image: url("https://images.unsplash.com/photo-1573411857875-d299b06c4f62?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 570px;
+  position: relative;
+}
+.top-body {
+  position: absolute;
+}
+.top-head {
+  font-size: 44px;
+  line-height: 64px;
+  font-weight: 500;
+  color: white;
+}
+.top-title {
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 100;
+  color: white;
+}
+
+.top button {
+  color: white;
+  font-size: 20px;
+  line-height: 36px;
+  margin: 10px;
+}
+.btn-light {
+  background: transparent;
+  color: white;
+}
+.btn-light:hover {
+  background-color: rgba(254, 254, 254, 0.1);
+}
+// why section/////////////////////////////////////////////////////////////////////////////////////////////
+
+.why {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem auto 6rem;
+}
+.why-head {
+  font-size: 36px;
+  line-height: 48px;
+  color: black;
+}
+.why-title {
+  color: rgb(105, 105, 105);
+  font-size: 20px;
+  margin-top: 18px;
+  line-height: 32px;
+}
+.why-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.why-card {
+  background: white;
+  border: 1px solid rgb(244, 244, 244);
+  box-shadow: rgba(28, 28, 28, 0.1) 0px 4px 16px;
+  border-radius: 6px;
+  width: 280px;
+  height: 100px;
+  padding: 20px 30px;
+  margin: 0px 10px 15px 0px;
+}
+.why-card-title {
+  font-size: 24px;
+  line-height: 32px;
+  color: rgb(37, 111, 239);
+  font-weight: 300;
+  margin: 0px;
+}
+.why-card-subtitle {
+  font-size: 18px;
+  line-height: 24px;
+  color: rgb(79, 79, 79);
+  font-weight: 100;
+}
+
+// how section///////////////////////////////////////////////////////////////////////////////////////////////
+
+.how {
+  background: url("https://b.zmtcdn.com/merchant-onboarding/f57794be6408563354c463c702ab45b91600672364.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 4rem;
+}
+.how-head {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 48px;
+  margin-bottom: 30px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.how-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 47px;
+}
+.how-card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(228, 233, 235, 0.5) 0px 10px 70px;
+  border-radius: 6px;
+  background-color: white;
+  height: fit-content;
+  width: 250px;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  text-align: center;
+}
+
+.how-card img {
+  margin-top: 1.4rem;
+  border-radius: 50%;
+  height: 147px;
+  width: 147px;
+}
+
+.how-card-title {
+  color: black;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.how-card-subtitle {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(79, 79, 86);
+  font-weight: 200;
+}
+.how-card-text {
+  font-size: 14px;
+  line-height: 24px;
+  color: rgb(79, 79, 86);
+  font-weight: 100;
+  margin-bottom: 0.8rem;
+  padding: 5px 10px;
+}
+// already products//////////////////////////////////////////////////////////
+
+.already-listed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8rem 0rem 8rem;
+  flex-wrap: wrap;
+}
+.already-listed-head {
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 500;
+  margin-top: 1.25rem;
+  color: rgb(0, 0, 0);
+}
+.already-listed-body {
+  margin-bottom: 1.25rem;
+  font-size: 20px;
+  line-height: 32px;
+  color: rgb(105, 105, 105);
+  margin-bottom: 3.6rem;
+}
+.input-group {
+  width: 100%;
+  justify-content: center;
+}
+.input-group input {
+  border: none;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 16px -5px #e4e4e4;
+  font-size: 18px;
+  padding: 12px;
+}
+// our products carousel element/////////////////////////////////////////////////////////////////////////
+.our-products {
+  margin: 8rem 0rem 8rem;
+}
+.our-products-heading {
+  font-weight: 500px;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  color: black;
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-products-body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.our-products-card-title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  color: rgb(28, 28, 28);
+}
+.our-products-card {
+  box-shadow: rgba(28, 28, 28, 0.08) 0px 2px 8px;
+  border: 1px solid rgb(244, 244, 244);
+  background: rgb(255, 255, 255);
+  border-radius: 8px;
+  margin: 10px;
+  height: 361px;
+  width: 280px;
+  padding: 0px;
+}
+
+.our-products-card-body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0.63rem;
+}
+.our-products-card-text {
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 100;
+  color: darkgray;
+}
+.our-products-card-link {
+  color: white;
+  font-weight: 500;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 24px;
+  position: absolute;
+  bottom: 19px;
+  left: 16px;
+}
+
+// // our-partnres////////////////////////////////////////////////////
+.our-partners {
+  background: url("https://b.zmtcdn.com/merchant-onboarding/033f8954dec293a3d5babc42179819681600686569.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: fit-content;
+  padding: 60px 0px 60px;
+}
+.our-partners-head {
+  font-size: 36px;
+  line-height: 48px;
+  color: black;
+  text-align: center;
+  font-weight: 500;
+}
+
+.our-partners-body {
+  align-self: center;
+  margin-top: 3rem;
+  font-weight: 300;
+  padding-bottom: 48px;
+}
+.our-partners-image {
+  display: flex;
+  align-items: center;
+}
+.our-partners-review {
+  font-size: 16px;
+  font-weight: 100;
+}
+.our-partners-username {
+  font-size: 18px;
+  color: #126bf2;
+}
+.our-partners-location {
+  font-size: 19px;
+  color: rgb(54, 54, 54);
+}
+
+// facilities////////////////////////////////////////////////////
+
+.facilities li:hover {
+  color: #007bff;
+}
+.facilities-head {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 48px;
+  color: rgb(0, 0, 0);
+}
+.facilities-body {
+  font-size: 20px;
+  line-height: 32px;
+  color: rgb(105, 105, 105);
+  margin-top: 10px;
+  margin-bottom: 2.8rem;
+  font-weight: 100;
+}
+.merchant {
+  margin-bottom: 17px;
+}
+.merchant-head {
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 500;
+  color: rgb(54, 54, 54);
+}
+.merchant-body {
+  font-size: 19px;
+  line-height: 32px;
+  font-weight: 100;
+  color: rgb(105, 105, 105);
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// facilities end///////////////////////////////////////////////////////////
+
+.start-journey {
+  background: linear-gradient(
+    98deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(3, 0, 0, 1) 51%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  opacity: 0.9;
+  border-radius: 9px;
+  padding: 20px;
+}
+.start-journey-head {
+  font-size: 25px;
+  font-weight: 500;
+
+  color: white !important;
+}
+.start-journey-title {
+  font-size: 18px;
+  font-weight: 200;
+  margin-bottom: 22px;
+  color: white !important;
+}
+.start-journey button {
+  color: white !important;
+  // position: relative;
+  // left: 20px;
+  margin-bottom: 20px;
+}
+
+//  frequently asked questions ///////////////////////////////////////////////////////////////////////////////
+
+.faq {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  page-break-after: auto;
+}
+.faq-head {
+  font-size: 36px;
+  font-weight: 500;
+  margin: 4rem 0px 1rem;
+  line-height: 48px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+.faq-qa {
+  margin-bottom: 1.25rem;
+}
+.faq-question {
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: white;
+  padding: 1rem 1.4rem;
+  border-radius: 5px;
+  border: 1px solid rgb(226, 224, 224);
+}
+.faq-answer {
+  color: #6b6b6b;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: white;
+  padding: 1rem 1.4rem;
+  border-radius: 5px;
+  border-bottom: 1px solid rgb(226, 224, 224);
+  border-left: 1px solid rgb(226, 224, 224);
+  border-right: 1px solid rgb(226, 224, 224);
+}
+
+// know more///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+.know-more {
+  background: url("https://b.zmtcdn.com/merchant-onboarding/f57794be6408563354c463c702ab45b91600672364.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.know-more-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.know-more-head {
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 500;
+  margin: 0px 0px 2rem;
+  color: black;
+}
+.know-more-body {
+  color: black;
+  font-size: 20px;
+  line-height: 32px;
+
+  font-weight: 100;
+}
+.know-more-link {
+  color: rgb(83, 156, 238) !important;
+  font-size: 20px;
+  line-height: 32px;
+  cursor: pointer;
+}
+.know-more-right {
+  background-color: white;
+  padding: 30px;
+  box-shadow: rgba(228, 233, 235, 0.9) 8px 46px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+.know-more-right input {
+  margin-bottom: 20px;
+  width: 100%;
+  font-weight: 100;
+  font-size: 18px;
+}
+.know-more-right button {
+  width: 100%;
+  font-weight: 100;
+  color: white;
+  font-size: 18px;
+}

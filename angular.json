@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "scss-app"
+  "defaultProject": "scss-app",
+  "cli": {
+    "analytics": "4836587f-4197-4daa-9715-9052b2176ac1"
+  }
 }

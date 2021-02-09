@@ -1,0 +1,332 @@
+<div class="container-fluid top">
+    <div class="top-body">
+        
+
+            <div class="top-head">Partner with Shupple</div>
+            <div class="top-title">for free and get more customers!</div>
+            <div class="top-buttons">
+                <button class="btn btn-primary">Register your Business</button>
+                <button class="btn btn-light">Business already listed? Claim now</button>
+            </div>
+    </div>
+</div>
+
+
+    <div class="container why">
+            <div style="margin: 4rem 0rem 4rem;">
+                <div class="why-head" >Why should you partner with Shupple?</div>
+                <div class="why-title" >
+                    Shupple enables you to get 60% more revenue, 10x new customers and <br>
+                    boosts you brand visibility by providing insights to improve your business
+                </div>
+            </div>
+         
+        <div class="why-body">
+            <div class="card why-card ">
+                <div class="card-title why-card-title">500+ Cities</div>
+                <div class="card-subtite why-card-subtitle">across India</div>
+            </div>
+            <div class="card why-card ">
+                <div class="card-title why-card-title">2.5 Lakhs+</div>
+                <div class="card-subtitle why-card-subtitle">business listing</div>
+            </div>
+            <div class="card why-card ">
+                <div class="card-title why-card-title">4 Crore+</div>
+                <div class="card-subtite why-card-subtitle">monthly orders</div>
+            </div>
+
+        </div>
+    </div>
+
+<div class="container-fluid how">
+
+    <div class="container ">
+       
+            <div class="row how-head" >
+                How it works?
+            </div>
+            <div class="how-body">
+                <div class="" *ngFor="let card of howcard">
+                    <div class="card how-card">
+                        <div>
+                            <img class="card-img-top" [src]="card.imageUrl" alt="">
+                           
+                        </div>
+                        <div class="card-title how-card-title">{{card.title}}</div>
+                        <div class="card-subtite how-card-subtitle">{{card.subtitle}}</div>
+                        <div class="card-text how-card-text">{{card.text}}</div>
+                    </div>
+                </div>
+               
+            </div>
+      
+    </div>
+</div>
+   
+        <div class="container">
+
+
+        <div class="container already-listed">
+            <div class="already-listed-head" >
+                Already have your restaurant listed?
+            </div>
+            <div class="already-listed-body" >
+                Search here and claim the ownership of your restaurant</div>
+            <div class="">
+                <form class="input-group">
+                    <input type="text" class="form-control " style="text-align: center;" aria-label="Large"
+                    placeholder="Delhi NCR">
+                    <br>
+                    <input type="text" class="form-control " aria-label="Large"
+                    placeholder="Search for your restaurant, eg. Greenland Cafe">
+                   
+                </form>
+            </div>
+        </div>
+
+        <div class="container our-products">
+            <div class="our-products-heading" >
+                Our Products
+
+            </div>
+            <div class="our-products-body">
+                <ngb-carousel #carousel [interval]="3000" pauseOnHover=true pauseOnFocus="true">
+                    <ng-template ngbSlide *ngFor="let products of ourproducts">
+                    <div class="our-products-body">
+                        <div class="card our-products-card">
+                           
+                            <img [src]="products.card1.imageUrl" class="card-img-top" alt="...">
+                            <div class="card-body our-products-card-body">
+                                <div class="card-title our-products-card-title">{{products.card1.title}}</div>
+                                <div class="card-text our-products-card-text">{{products.card1.text}}</div>
+                                <a [href]="products.card1.link" class="our-products-card-link">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="card our-products-card">
+
+                            <img [src]="products.card2.imageUrl" class="card-img-top" alt="...">
+                            <div class="card-body our-products-card-body">
+                                <div class="card-title our-products-card-title">{{products.card2.title}}</div>
+                                <div class="card-text our-products-card-text">{{products.card2.text}}</div>
+                                <a [href]="products.card2.link" class="our-products-card-link">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="card our-products-card">
+                           
+                            <img [src]="products.card3.imageUrl" class="card-img-top" alt="...">
+                            <div class="card-body our-products-card-body">
+                                <div class="card-title our-products-card-title">{{products.card3.title}}</div>
+                                <div class="card-text our-products-card-text">{{products.card3.text}}</div>
+                                <a [href]="products.card3.link" class="our-products-card-link">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </ngb-carousel>
+         </div>
+        </div>
+   
+</div>
+    <!-- partners------------------------------------------------------------------------ -->
+
+    <div class="container-fluid our-partners">
+        <div class="container">
+
+            <div class="">
+                <div class="container our-partners-head" >
+                    Our happy partners
+                </div>
+            </div>
+
+            <div class=" our-partners-body">
+               
+                <ngb-carousel #carousel [interval]="3000" pauseOnHover="true" pauseOnFocus="true"
+                showNavigationArrows="false">
+                <ng-template ngbSlide *ngFor="let partner of ourpartner">
+                    <div class="container col-9">
+                    <div class="row">
+                       
+                            <div class="col-sm-12 col-md-3" >
+                                <div class="our-partners-image">
+                                    <img [src]="partner.imageUrl" style="border-radius: 13px;width: 100px;" alt="">
+                                   
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-9">
+                                <div class="row our-partners-review">{{partner.review}}</div>
+                                <div class="row our-partners-username">{{partner.username}}</div>
+                                <div class="row our-partners-location">{{partner.location}}</div>
+                               
+                            </div>
+                    </div>
+                    </div>
+
+                </ng-template>
+            </ngb-carousel>
+        </div>
+    </div>
+    </div>
+   
+   
+    <!-- facilities----------------------------------------------------------------------- -->
+
+    <div class="container facilities">
+        <div class="facilities-head" > What do you get on sign-up</div>
+        <div class="facilities-body">Shupple Partner Platform helps you take your business to new heights instantly with no hassle and 100%
+            transparency!</div>
+        <div class="row">
+            <div class="col-sm-12 col-lg-6">
+            <ol type="1" class="merchant-container">
+                <li class=" merchant">
+                    <div class=" merchant-head" >
+                        Merchant App
+                    </div>
+                    <div class=" merchant-body" >
+                        Get Zomato Partner app and manage your outlet on your smartphone
+                    </div>
+                </li>
+                <li class="merchant">
+                    <div class=" merchant-head" >
+                        Web Dashboard
+                    </div>
+                        <div class=" merchant-body" >
+                            Manage all your orders on our all new restaurant partnerdashboard.
+                        </div>
+                </li>
+                <li class="merchant">
+                    <div class=" merchant-head" >
+                        API Integration
+                    </div>
+                    <div class=" merchant-body" >Integration with third party APIs to manage all your orders at one place
+
+                    </div>
+                </li>
+            </ol>
+            </div>
+            <div  class="col-sm-12 col-lg-6 ">
+                <div class="image-container">
+                <ngb-carousel #carousel [activeId]="0" [interval]="4000" pauseOnHover=true pauseOnFocus="true" showNavigationArrows="true" showNavigationButtons="true" wrap="true">
+                    <ng-template   ngbSlide *ngFor="let image of images;index as i" >
+                        <div style="width: 300px;height: 300px;display: flex;align-items: center;justify-content: center;">
+                            <img class="carousel-image" style="height: -webkit-fill-available;" [src]="image" alt="">
+
+                        </div>
+                    </ng-template>
+                </ngb-carousel>
+                </div>
+            </div>
+        </div>
+           
+        </div>
+       
+
+    <!-- start - journey ----------------------------------------------------------------------------------------------------------------->
+    <div class="container start-journey">
+        <div class="start-journey-head">
+            Start your journey with Shupple
+        </div>
+        <div class="start-journey-title">create your business page and register for online ordering</div>
+        <button class="btn btn-primary">Start now</button>
+    </div>
+
+    <!-- faq--------------- ---------------------------------------------------------------------------------------------------------------- -->
+    <div class="container faq">
+        <div class="faq-head">
+            Frequently asked questions
+        </div>
+        <div class="faq-body">
+           
+            <div class="faq-qa">
+                <div class="faq-question" (click)="showAnswer1()">
+                    What will Shupple charge me for creating a page on its platform?
+                </div>
+                <div class="faq-answer" *ngIf="show1">Creating a restaurant page on Shupple is free of cost. You can
+                    maintain your page by replying to reviews and do a lot more without any charges.</div>
+                </div>
+
+                <div class="faq-qa">
+                    <div class="faq-question" (click)="showAnswer2()">What will Shupple charge me for creating a page on its
+                        platform?
+                    </div>
+                    <div class="faq-answer" *ngIf="show2">Creating a restaurant page on Shupple is free of cost. You can
+                        maintain your page by replying to reviews and do a lot more without any charges.
+                    </div>
+                </div>
+
+                    <div class="faq-qa">
+                        <div class="faq-question" (click)="showAnswer3()">What will Shupple charge me for creating a page on its
+                            platform?
+                        </div>
+                        <div class="faq-answer" *ngIf="show3">Creating a restaurant page on Shupple is free of cost. You can
+                            maintain your page by replying to reviews and do a lot more without any charges.
+                        </div>
+                    </div>
+                       
+
+                </div>
+            </div>
+    <!-- know more---------------------------------------------------------------------------------------------------------------------------- -->
+    <div class="container-fluid  know-more">
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-12 col-md-6  col-lg-6 ">
+                    <!-- <div style="display: flex;align-items: center;justify-content: center;"> -->
+
+                        <div class="container know-more-left">
+                            <div class="know-more-head">Want to know more?</div>
+                            <div class="know-more-body">Please leave your contact details <br> and we'll be in touch within 24 hours</div>
+                            <br>
+                            <div class="know-more-body">or send use your query at
+                            </div>
+                            <div class="know-more-link">
+                                <a href="#">business@shupple.com</a>
+                            </div>
+                        </div>
+                    <!-- </div> -->
+                </div>
+               
+                <div class="col-sm-12 col-md-6 col-lg-6" style="display: flex;align-items: center;justify-content: center;">
+                <form class="input-group " style="display: flex;align-items: center;justify-content: center;">
+
+                        <div class="container  know-more-right">
+
+                            <div >
+                                <input type="text" class="form-control " placeholder="Your Full Name">
+                               
+                        </div>
+                        <div >
+                            <input type="text" class="form-control " placeholder="Phone Number">
+                           
+                        </div>
+                        <div >
+                            <input type="text" class="form-control " placeholder="Email Id">
+                           
+                        </div>
+                        <div >
+                           
+                            <input type="text" class="form-control " placeholder="Business Name">
+                        </div>
+                        <div >
+                            <input type="text" class="form-control " placeholder="City">
+                           
+                        </div>
+                        <div >
+                            <button class="btn btn-primary">Contact me</button>
+                           
+                        </div>
+                        </div>
+                    </form>
+                    </div>
+                    
+            </div>
+        </div>
+       
+    </div>
+       
+       
+       
+       
+
+
